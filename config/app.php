@@ -156,6 +156,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Providers de proyecto
+         */
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,  // Laravel IDE Helper
+        Collective\Html\HtmlServiceProvider::class,                 // Laravel Collective
+
     ],
 
     /*
@@ -201,6 +207,12 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        /*
+         * Aliases de proyecto
+         */
+        'Form' => Collective\Html\FormFacade::class,        // Laravel Collective
+        'Html' => Collective\Html\HtmlFacade::class,        // Laravel Collective
 
     ],
 
